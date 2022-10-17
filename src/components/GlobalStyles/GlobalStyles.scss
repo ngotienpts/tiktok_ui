@@ -4,6 +4,12 @@
     // default layout
     --default-layout-header-height: 60px;
     --default-layout-width: 1150px;
+
+    // color text
+    --primary: rgba(254, 44, 85, 1);
+    --text-color: rgba(22, 24, 35, 1);
+    --text-black: #000;
+    --text-white: #fff;
 }
 * {
     box-sizing: border-box;
@@ -19,4 +25,17 @@ body {
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     text-rendering: optimizeSpeed;
+    color: var(--text-color);
+}
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }

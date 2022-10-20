@@ -2,6 +2,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent;
     font-size: 1.6rem;
     font-weight: 700;
     min-width: 10rem;
@@ -17,7 +18,7 @@
     user-select: none;
 
     + .wrapper {
-        margin-left: 0.8rem;
+        margin-left: 1.6rem;
     }
 
     &.disabled {
@@ -62,5 +63,8 @@
     }
 }
 .left-icon {
+    display: inline-block;
     margin-right: 0.8rem;
+    width: 24px;
+    text-align: center;
 }

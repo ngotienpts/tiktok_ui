@@ -78,6 +78,8 @@
     padding: 11px 16px 11px 12px;
     font-size: 18px;
     color: rgba(22, 24, 35, 0.34);
+    display: flex;
+    align-items: center;
 
     &:hover {
         background-color: rgba(22, 24, 35, 0.03);
@@ -121,11 +123,41 @@
     display: flex;
     align-items: center;
 }
+.current-user {
+    display: flex;
+    align-items: center;
+}
 .action-btn {
-    font-size: 2rem;
+    position: relative;
     background-color: transparent;
     cursor: pointer;
-    color: #161823;
+    line-height: 0;
+
+    & + .action-btn {
+        margin-left: 1.6rem;
+    }
+
+    & .badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        min-width: 1.8rem;
+        height: 1.8rem;
+        background-color: var(--primary);
+        font-size: 1rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+}
+.message-icon {
+    padding: 3px 3px 0;
 }
 .more-btn {
     font-size: 2rem;

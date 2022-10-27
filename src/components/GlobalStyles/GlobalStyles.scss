@@ -10,6 +10,7 @@
     --text-color: rgba(22, 24, 35, 1);
     --text-black: #000;
     --text-white: #fff;
+    --p-24: 2.4rem;
 }
 * {
     box-sizing: border-box;
@@ -38,4 +39,20 @@ input,
 a[href] {
     color: var(--text-color);
     text-decoration: none;
+}
+body .tippy-box {
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: rgba(84, 84, 84, 0.92);
+    color: rgb(255, 255, 255);
+    padding: 3px;
+}
+body .tippy-arrow {
+    color: rgba(84, 84, 84, 0.92);
+}
+body .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+    top: -8px;
 }
